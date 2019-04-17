@@ -4,7 +4,7 @@ Helpful code snippets for quicker development using React 16.8.0+ hooks
 
 ## Features
 
-- to be continued..
+- Current snippet commands are ush (useState()), uch (useContext()), and ueh (useEffect()).
 
 ## Requirements
 
