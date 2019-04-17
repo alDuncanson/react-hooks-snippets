@@ -1,0 +1,43 @@
+{
+	"useState()": {
+    "prefix": "ush",
+    "body": [
+      "const [${1}, set${1/(.*)/${1:/capitalize}/}] = useState($2)$0"
+    ],
+    "description": "React useState() hook"
+	},
+	"useEffect()": {
+		"prefix": "ueh",
+		"body": [
+			"useEffect(() => {",
+				"\n\t$LINE_COMMENT componentDidMount(), componentDidUpdate()",
+				"\t$1",
+				"\n\treturn cleanUp = () => {",
+					"\t$LINE_COMMENT componentWillUnmount()",
+					"\t\t$2",
+				"\t}",
+			"$LINE_COMMENT effect dependency array",
+			"}, [${3:dependencies}])$0"
+		]
+	},
+	"useContext()": {
+		"prefix": "uch",
+		"body": [
+			"const $1 = useContext($2)$0"
+		]
+	},
+	"functional component": {
+		"prefix": "fc",
+		"body": [
+			"import React, { useState, useEffect, useContext, Fragment } from 'react'",
+			"\nconst ${1} = props => {",
+				"\treturn (",
+					"\t\t<Fragment>",
+					"\t\t\t$0",
+					"\t\t</Fragment>",
+				"\t)",
+			"}",
+			"export default ${1}"
+		]
+	}
+}
