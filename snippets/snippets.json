@@ -25,19 +25,5 @@
 		"body": [
 			"const $1 = useContext($2)$0"
 		]
-	},
-	"functional component": {
-		"prefix": "fc",
-		"body": [
-			"import React, { useState, useEffect, useContext, Fragment } from 'react'",
-			"\nconst ${1} = props => {",
-				"\treturn (",
-					"\t\t<Fragment>",
-					"\t\t\t$0",
-					"\t\t</Fragment>",
-				"\t)",
-			"}",
-			"export default ${1}"
-		]
 	}
 }
