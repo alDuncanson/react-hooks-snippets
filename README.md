@@ -1,5 +1,5 @@
 <p align='center'>
-	<img src='https://github.com/alDuncanson/react-hooks-snippets/assets/icon.png' title='React Hooks Snippets icon' alt='React Hooks Snippets icon' width='250'/>
+	<img src='https://github.com/alDuncanson/react-hooks-snippets/blob/master/assets/icon.png' title='React Hooks Snippets icon' alt='React Hooks Snippets icon' width='250'/>
 </p>
 
 ----
