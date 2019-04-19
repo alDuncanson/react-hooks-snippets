@@ -3,7 +3,7 @@
     "displayName": "React Hooks Snippets",
     "description": "Code snippets for React Hooks",
     "version": "1.0.0",
-    "icon": "icon.png",
+    "icon": "assets/icon.png",
     "publisher": "AlDuncanson",
     "repository": {
         "type": "git",
