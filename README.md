@@ -41,10 +41,12 @@ Type `uch` to `u`se `c`ontext `h`ook!
 ### useCallback
 Type `ucbh` to `u`se `c`all `b`ack `h`ook!
 
+![](assets/useCallbackHook.gif)
 
 ### useMemo
 Type `umh` to `u`se `m`emo `h`ook!
 
+![](assets/useMemoHook.gif)
 
 ## Add to your project
 
