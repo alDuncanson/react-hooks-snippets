@@ -10,14 +10,16 @@
         "url": "https://github.com/alDuncanson/react-hooks-snippets.git"
     },
     "keywords": [
-        "React",
-        "Hooks"
+        "react",
+				"hooks",
+				"javascript",
+				"es6"
     ],
     "engines": {
         "vscode": "^1.33.0"
     },
     "categories": [
-        "Snippets"
+        "snippets"
     ],
     "contributes": {
         "snippets": [

@@ -24,19 +24,27 @@ React Hooks Snippets is a [Visual Studio Code](https://code.visualstudio.com/) e
 Currently, three hooks are supported: `useState`, `useEffect`, and `useContext`.
 
 ### useState
-Just type `ush` to `u`se `s`tate `h`ook!
+Type `ush` to `u`se `s`tate `h`ook!
 
 ![](assets/useStateHook.gif)
 
 ### useEffect
-Just type `ueh` to `u`se `e`ffect `h`ook!
+Type `ueh` to `u`se `e`ffect `h`ook!
 
 ![](assets/useEffectHook.gif)
 
 ### useContext
-Just type `uch` to `u`se `c`ontext `h`ook!
+Type `uch` to `u`se `c`ontext `h`ook!
 
 ![](assets/useContextHook.gif)
+
+### useCallback
+Type `ucbh` to `u`se `c`all `b`ack `h`ook!
+
+
+### useMemo
+Type `umh` to `u`se `m`emo `h`ook!
+
 
 ## Add to your project
 
@@ -50,8 +58,8 @@ Launch VS Code Extension Marketplace (Ctrl+Shift+X), search for `React Hooks Sni
 
 ## Todo
 - [ ] add `useReducer` hook
-- [ ] add `useCallback` hook
-- [ ] add `useMemo` hook
+- [X] add `useCallback` hook
+- [X] add `useMemo` hook
 - [ ] add `useRef` hook
 - [ ] add `useImperativeHandle` hook
 - [ ] add `useLayoutEffect` hook

@@ -1,12 +1,12 @@
 {
-	"useState()": {
+	"useState": {
     "prefix": "ush",
     "body": [
       "const [${1}, set${1/(.*)/${1:/capitalize}/}] = useState($2)$0"
     ],
     "description": "React useState() hook"
 	},
-	"useEffect()": {
+	"useEffect": {
 		"prefix": "ueh",
 		"body": [
 			"useEffect(() => {",
@@ -20,10 +20,27 @@
 			"}, [${3:dependencies}])$0"
 		]
 	},
-	"useContext()": {
+	"useContext": {
 		"prefix": "uch",
 		"body": [
 			"const $1 = useContext($2)$0"
+		]
+	},
+	"useCallback": {
+		"prefix": "ucbh",
+		"body": [
+			"const ${1:memoizedCallback} = useCallback(",
+				"\t() => {",
+					"\t\t${2:doSomething}(${3:a}, ${4:b})",
+				"\t},",
+				"\t[${5:a}, ${6:b}],",
+			")$0"
+		]
+	},
+	"useMemo": {
+		"prefix": "umh",
+		"body": [
+			"const ${1:memoizedValue} = useMemo(() => ${2:computeExpensiveValue}(${3:a}, ${4:b}), [${5:a}, ${6:b}])$0"
 		]
 	}
 }
