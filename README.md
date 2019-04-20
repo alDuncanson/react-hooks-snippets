@@ -21,7 +21,7 @@
 React Hooks Snippets is a [Visual Studio Code](https://code.visualstudio.com/) extension to make writing ReactJS [Hooks](https://reactjs.org/docs/hooks-intro.html) easier and faster!
 
 ## Features
-Currently, three hooks are supported: `useState`, `useEffect`, and `useContext`.
+Currently, five hooks are supported: `useState`, `useEffect`, `useContext`, `useCallback`, and `useMemo`
 
 ### useState
 Type `ush` to `u`se `s`tate `h`ook!
