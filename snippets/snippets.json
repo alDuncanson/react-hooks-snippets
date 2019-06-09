@@ -43,9 +43,8 @@
 			"const ${1:memoizedValue} = useMemo(() => ${2:computeExpensiveValue}(${3:a}, ${4:b}), [${5:a}, ${6:b}])$0"
 		]
 	},
-	"Import React, { useState,useContext,useEffect }": {
-    "prefix": "imrus",
-    "body": ["import React, { useState,useEffect,useContext } from 'react';"],
-    "description": "Import React, { useState,useEffect,useContext }"
+	"import react hooks": {
+    "prefix": "irh",
+    "body": ["import React, { useState, useContext, useEffect, useCallback, useMemo } from 'react'"]
   }
 }
