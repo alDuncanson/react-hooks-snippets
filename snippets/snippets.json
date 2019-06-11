@@ -2,7 +2,7 @@
 	"useState": {
     "prefix": "ush",
     "body": [
-      "const [${1}, set${1/(.*)/${1:/capitalize}/}] = useState($2)$0"
+      "const [${1}, set${1/(.*)/${1:/capitalize}/}] = useState($2);$0"
     ],
     "description": "React useState() hook"
 	},
@@ -17,14 +17,16 @@
 					"\t\t$2",
 				"\t}",
 			"$LINE_COMMENT effect dependency array",
-			"}, [${3:dependencies}])$0"
-		]
+			"}, [${3:dependencies}]);$0"
+		],
+		"description": "React useEffect() hook"
 	},
 	"useContext": {
 		"prefix": "uch",
 		"body": [
-			"const $1 = useContext($2)$0"
-		]
+			"const $1 = useContext($2);$0"
+		],
+		"description": "React useContext() hook"
 	},
 	"useCallback": {
 		"prefix": "ucbh",
@@ -34,17 +36,19 @@
 					"\t\t${2:doSomething}(${3:a}, ${4:b})",
 				"\t},",
 				"\t[${5:a}, ${6:b}],",
-			")$0"
-		]
+			");$0"
+		],
+		"description": "React useCallback() hook"
 	},
 	"useMemo": {
 		"prefix": "umh",
 		"body": [
-			"const ${1:memoizedValue} = useMemo(() => ${2:computeExpensiveValue}(${3:a}, ${4:b}), [${5:a}, ${6:b}])$0"
-		]
+			"const ${1:memoizedValue} = useMemo(() => ${2:computeExpensiveValue}(${3:a}, ${4:b}), [${5:a}, ${6:b}]);$0"
+		],
+		"description": "React useMemo() hook"
 	},
 	"import react hooks": {
     "prefix": "irh",
-    "body": ["import React, { useState, useContext, useEffect, useCallback, useMemo } from 'react'"]
+    "body": ["import React, { useState, useContext, useEffect, useCallback, useMemo } from 'react';"]
   }
 }
