@@ -50,5 +50,24 @@
 	"import react hooks": {
     "prefix": "irh",
     "body": ["import React, { useState, useContext, useEffect, useCallback, useMemo } from 'react';"]
-  }
+  },
+	"useRef": {
+	"prefix": "urh",
+	"body": [
+		"const $1 = useRef($2)$0"
+    ],
+    "description": "React useRef() hook"
+},
+	"useReducer": {
+    "prefix": "urdh",
+    "body": [
+        "const [${1:state},${2: dispatch}] = useReducer(state, action);", 
+            
+            "\n\treturn (",
+            "\t\t",
+            "\t);"
+
+        ],
+        "description": "React useReducer() hook"
+}
 }
