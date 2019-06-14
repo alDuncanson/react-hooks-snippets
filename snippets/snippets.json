@@ -69,5 +69,9 @@
 
         ],
         "description": "React useReducer() hook"
-}
+},
+    "prev state": {
+        "prefix": "prev",
+        "body": ["const prev$1Ref = useRef();", "useEffect(() => {", "\tprev$1Ref.current = $1;", "});", "const prev$1 = prev$1Ref.current;"]
+    } 
 }
