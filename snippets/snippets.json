@@ -73,4 +73,23 @@
     "prev state": {
         "prefix": "prev",
         "body": [ "const prev${1/(.*)/${1:/capitalize}/}Ref = useRef();", "useEffect(() => {", "\tprev${1/(.*)/${1:/capitalize}/}Ref.current = $1;", "});", "const prev$1 = prev${1:/capitalize}/}Ref.current;"]
+    },
+    "import react-redux hooks": {
+        "prefix": "irrh",
+        "body": ["import { useSelector, useDispatch } from 'react-redux';"]
+    },
+    "useSelector": {
+        "prefix": "uss",
+        "body": [
+            "const $1 = useSelector(state => $2);"
+        ]
+    },
+    "useDispatchFunction": {
+      "prefix": "usdf",
+      "body": ["const dispatch = useDispatch();"]
+    },
+    "useDispatch": {
+      "prefix": "usd",
+      "body": ["const $1 = $2 => dispatch($3);"]
+    }
 }
