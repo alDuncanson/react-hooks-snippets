@@ -72,6 +72,5 @@
 },
     "prev state": {
         "prefix": "prev",
-        "body": ["const prev$1Ref = useRef();", "useEffect(() => {", "\tprev$1Ref.current = $1;", "});", "const prev$1 = prev$1Ref.current;"]
-    } 
+        "body": [ "const prev${1/(.*)/${1:/capitalize}/}Ref = useRef();", "useEffect(() => {", "\tprev${1/(.*)/${1:/capitalize}/}Ref.current = $1;", "});", "const prev$1 = prev${1:/capitalize}/}Ref.current;"]
 }
