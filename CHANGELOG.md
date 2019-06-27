@@ -7,7 +7,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
-## [1.1.6] - 2019-06-27
+## [1.1.5] - 2019-06-27
 
 ### Added
 - useRef hook snippet
