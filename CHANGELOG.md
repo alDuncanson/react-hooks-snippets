@@ -7,6 +7,17 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.1.6] - 2019-06-27
+
+### Added
+- useRef hook snippet
+- useReducer hook snippet
+- prev state snippet
+- import react redux hooks
+- useSelector hook snippet
+- useDispatch hook snippet
+- dispatch snippet
+
 ## [1.1.1] - 2019-06-09
 
 ### Added

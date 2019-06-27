@@ -21,7 +21,7 @@
 React Hooks Snippets is a [Visual Studio Code](https://code.visualstudio.com/) extension to make writing ReactJS [Hooks](https://reactjs.org/docs/hooks-intro.html) easier and faster!
 
 ## Features
-Currently, five hooks are supported: `useState`, `useEffect`, `useContext`, `useCallback`, and `useMemo`
+Currently, five hooks are supported: `useState`, `useEffect`, `useContext`, `useCallback`, and `useMemo`. Other snippets have also been added, thanks @yashwanthambati and @andreifilip123!
 
 ### useState
 Type `ush` to `u`se `s`tate `h`ook!
@@ -47,6 +47,35 @@ Type `ucbh` to `u`se `c`all `b`ack `h`ook!
 Type `umh` to `u`se `m`emo `h`ook!
 
 ![](assets/useMemoHook.gif)
+
+... More have been added! See below
+
+### useRef
+Type `urh` to `u`se `r`ef `h`ook
+
+### useReducer
+Type `urdh` to `u`se `r`e`d`ucer `h`ook
+
+### useSelector
+Type `uss` to `u``s`e `s`elector hook
+
+### useDispatchFunction
+Type `usdf` to `u``s`e `d`ispatch `f`unction hook
+
+### useDispatch
+Type `usd` to `u``s`e `d`ispatch hook
+
+### import React hooks
+Type `irh` to import React and the most commonly used hooks 
+
+### import React Redux hooks
+Type `irrh` to `i`mport `r`eact `r`edux `h`ooks
+
+### import react hooks
+Type `irh` to `i`mport `r`eact `h`ooks
+
+### prev state
+Type `prev` to use `prev`ious state
 
 ## Add to your project
 
