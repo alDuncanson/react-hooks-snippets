@@ -21,7 +21,7 @@
 React Hooks Snippets is a [Visual Studio Code](https://code.visualstudio.com/) extension to make writing ReactJS [Hooks](https://reactjs.org/docs/hooks-intro.html) easier and faster!
 
 ## Features
-Currently, five hooks are supported: `useState`, `useEffect`, `useContext`, `useCallback`, and `useMemo`. Other snippets have also been added, thanks @yashwanthambati and @andreifilip123!
+The current supported snippets are: `useState`, `useEffect`, `useContext`, `useCallback`, `useMemo`, `useRef`, `useReducer`, `useSelector`, `useDispatchFunction`, `useDispatch`, as well as snippets for `import react hooks` and `import react redux hooks`.
 
 ### useState
 Type `ush` to `u`se `s`tate `h`ook!
@@ -70,9 +70,6 @@ Type `irh` to import React and the most commonly used hooks
 
 ### import React Redux hooks
 Type `irrh` to `i`mport `r`eact `r`edux `h`ooks
-
-### import react hooks
-Type `irh` to `i`mport `r`eact `h`ooks
 
 ### prev state
 Type `prev` to use `prev`ious state
