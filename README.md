@@ -85,10 +85,10 @@ Launch VS Code Quick Open (Ctrl+P), paste the `ext install AlDuncanson.react-hoo
 Launch VS Code Extension Marketplace (Ctrl+Shift+X), search for `React Hooks Snippets`, and look for my logo!
 
 ## Todo
-- [ ] add `useReducer` hook
+- [X] add `useReducer` hook
 - [X] add `useCallback` hook
 - [X] add `useMemo` hook
-- [ ] add `useRef` hook
+- [X] add `useRef` hook
 - [ ] add `useImperativeHandle` hook
 - [ ] add `useLayoutEffect` hook
 - [ ] add `useDebugValue` hook
