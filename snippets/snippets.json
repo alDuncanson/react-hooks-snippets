@@ -10,14 +10,11 @@
 		"prefix": "ueh",
 		"body": [
 			"useEffect(() => {",
-				"\n\t$LINE_COMMENT componentDidMount(), componentDidUpdate()",
 				"\t$1",
 				"\n\treturn cleanUp = () => {",
-					"\t$LINE_COMMENT componentWillUnmount()",
 					"\t\t$2",
 				"\t}",
-			"$LINE_COMMENT effect dependency array",
-			"}, [${3:dependencies}]);$0"
+			"}, [${3}]);$0"
 		],
 		"description": "React useEffect() hook"
 	},

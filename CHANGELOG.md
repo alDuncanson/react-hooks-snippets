@@ -7,6 +7,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.1.6]
+
+### Added
+- typescript react support
+- removed useEffect() hook comments
+
 ## [1.1.5] - 2019-06-27
 
 ### Added
