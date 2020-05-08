@@ -78,7 +78,7 @@
     "useSelector": {
         "prefix": "uss",
         "body": [
-            "const $1 = useSelector(state => $2);"
+            "const $1 = useSelector(state => state.$1);"
         ]
     },
     "useDispatchFunction": {
