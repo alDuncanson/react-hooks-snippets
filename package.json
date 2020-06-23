@@ -2,8 +2,8 @@
 	"name": "react-hooks-snippets",
 	"displayName": "React Hooks Snippets",
 	"description": "Code snippets for React Hooks",
-	"version": "1.2.0",
-	"icon": "./assets/icon.png",
+	"version": "1.1.7",
+	"icon": "icon.png",
 	"publisher": "AlDuncanson",
 	"repository": {
 		"type": "git",
