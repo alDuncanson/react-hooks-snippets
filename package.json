@@ -13,7 +13,9 @@
 		"react",
 		"hooks",
 		"javascript",
-		"es6"
+		"es6",
+		"snippets",
+		"snippet"
 	],
 	"engines": {
 		"vscode": "^1.33.0"

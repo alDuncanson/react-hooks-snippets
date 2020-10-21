@@ -36,7 +36,6 @@ React Hooks Snippets is a [Visual Studio Code](https://code.visualstudio.com/) e
 | `irh` | `import React` (and common hooks) |
 | `urh` | `useRef` |
 | `urdh` | `useReducer` |
-| `prev` | use previous state|
 | `irrh` | import react redux hooks |
 | `uss` | `useSelector` |
 | `usdf` | `useDispatch` |
@@ -56,7 +55,13 @@ Launch VS Code Extension Marketplace (Ctrl+Shift+X), search for `React Hooks Sni
 
 ## Contributing
 
-Submit a pull request with your proposed fixes, changes, and/or improvements and I'll take a look!
+There are two ways to contribute:
+
+#### Code
+Submit a pull request with your proposed fixes, changes, and/or improvements. All are welcome!
+
+#### Coffee
+<a href='https://www.buymeacoffee.com/alduncanson' target='_blank'><img src='https://cdn.buymeacoffee.com/buttons/default-orange.png' alt='Buy Me A Coffee' height='34' width='144'></a>
 
 ## License
-Usage is provided under the [MIT License](https://opensource.org/licenses/MIT). See LICENSE.txt for the full details.
+Usage is provided under the [MIT License](https://opensource.org/licenses/MIT). See [LICENSE.txt](https://github.com/alDuncanson/react-hooks-snippets/blob/master/LICENSE.txt) for the full details.

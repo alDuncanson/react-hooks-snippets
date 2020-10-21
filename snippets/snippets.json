@@ -1,19 +1,19 @@
 {
 	"useState": {
-    "prefix": "ush",
-    "body": [
-      "const [${1}, set${1/(.*)/${1:/capitalize}/}] = useState($2);$0"
-    ],
-    "description": "React useState() hook"
+		"prefix": "ush",
+		"body": [
+			"const [${1}, set${1/(.*)/${1:/capitalize}/}] = useState($2);$0"
+		],
+		"description": "React useState() hook"
 	},
 	"useEffect": {
 		"prefix": "ueh",
 		"body": [
 			"useEffect(() => {",
-				"\t$1",
-				"\n\treturn cleanUp = () => {",
-					"\t\t$2",
-				"\t}",
+			"\t$1",
+			"\n\treturn cleanUp = () => {",
+			"\t\t$2",
+			"\t}",
 			"}, [${3}]);$0"
 		],
 		"description": "React useEffect() hook"
@@ -29,10 +29,10 @@
 		"prefix": "ucbh",
 		"body": [
 			"const ${1:memoizedCallback} = useCallback(",
-				"\t() => {",
-					"\t\t${2:doSomething}(${3:a}, ${4:b})",
-				"\t},",
-				"\t[${5:a}, ${6:b}],",
+			"\t() => {",
+			"\t\t${2:doSomething}(${3:a}, ${4:b})",
+			"\t},",
+			"\t[${5:a}, ${6:b}],",
 			");$0"
 		],
 		"description": "React useCallback() hook"
@@ -45,48 +45,47 @@
 		"description": "React useMemo() hook"
 	},
 	"import react hooks": {
-    "prefix": "irh",
-    "body": ["import React, { useState, useContext, useEffect, useCallback, useMemo } from 'react';"]
-  },
+		"prefix": "irh",
+		"body": [
+			"import React, { useState, useContext, useEffect, useCallback, useMemo } from 'react';"
+		]
+	},
 	"useRef": {
-	"prefix": "urh",
-	"body": [
-		"const $1 = useRef($2)$0"
-    ],
-    "description": "React useRef() hook"
-},
+		"prefix": "urh",
+		"body": [
+			"const $1 = useRef($2);$0"
+		],
+		"description": "React useRef() hook"
+	},
 	"useReducer": {
-    "prefix": "urdh",
-    "body": [
-        "const [${1:state},${2: dispatch}] = useReducer(state, action);", 
-            
-            "\n\treturn (",
-            "\t\t",
-            "\t);"
-
-        ],
-        "description": "React useReducer() hook"
-},
-    "prev state": {
-        "prefix": "prev",
-        "body": [ "const prev${1/(.*)/${1:/capitalize}/}Ref = useRef();", "useEffect(() => {", "\tprev${1/(.*)/${1:/capitalize}/}Ref.current = $1;", "});", "const prev$1 = prev${1:/capitalize}/}Ref.current;"]
-    },
-    "import react-redux hooks": {
-        "prefix": "irrh",
-        "body": ["import { useSelector, useDispatch } from 'react-redux';"]
-    },
-    "useSelector": {
-        "prefix": "uss",
-        "body": [
-            "const $1 = useSelector(state => state.$1);"
-        ]
-    },
-    "useDispatchFunction": {
-      "prefix": "usdf",
-      "body": ["const dispatch = useDispatch();"]
-    },
-    "useDispatch": {
-      "prefix": "usd",
-      "body": ["const $1 = $2 => dispatch($3);"]
-    }
+		"prefix": "urdh",
+		"body": [
+			"const [${1:state},${2: dispatch}] = useReducer(${3:reducer}, ${4:initialArg}, ${5:init});"
+		],
+		"description": "React useReducer() hook"
+	},
+	"import react-redux hooks": {
+		"prefix": "irrh",
+		"body": [
+			"import { useSelector, useDispatch } from 'react-redux';"
+		]
+	},
+	"useSelector": {
+		"prefix": "uss",
+		"body": [
+			"const $1 = useSelector(state => state.$1);"
+		]
+	},
+	"useDispatchFunction": {
+		"prefix": "usdf",
+		"body": [
+			"const $1 = useDispatch($2);$3"
+		]
+	},
+	"useDispatch": {
+		"prefix": "usd",
+		"body": [
+			"const $1 = $2 => dispatch($3);"
+		]
+	}
 }
