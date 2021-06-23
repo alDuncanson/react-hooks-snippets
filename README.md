@@ -2,10 +2,11 @@
 	<img src='https://raw.githubusercontent.com/alDuncanson/react-hooks-snippets/master/icon.png' title='React Hooks Snippets icon' alt='React Hooks Snippets icon' width='250'/>
 </p>
 
----
-
 <p align='center'>
 	<a href='https://marketplace.visualstudio.com/items?itemName=AlDuncanson.react-hooks-snippets'><img src='https://vsmarketplacebadge.apphb.com/version/AlDuncanson.react-hooks-snippets.svg'/></a>
+	<a href='https://marketplace.visualstudio.com/items?itemName=AlDuncanson.react-hooks-snippets'>
+		<img alt="Visual Studio Marketplace Downloads" src="https://img.shields.io/visual-studio-marketplace/d/AlDuncanson.react-hooks-snippets">
+	</a>
 	<a href='https://marketplace.visualstudio.com/items?itemName=AlDuncanson.react-hooks-snippets'><img src='https://vsmarketplacebadge.apphb.com/installs/AlDuncanson.react-hooks-snippets.svg'/></a>
 	<a href='https://marketplace.visualstudio.com/items?itemName=AlDuncanson.react-hooks-snippets'><img src='https://vsmarketplacebadge.apphb.com/rating/AlDuncanson.react-hooks-snippets.svg'/></a>
 </p>
@@ -15,8 +16,6 @@
 	<a href='https://github.com/alDuncanson/react-hooks-snippets/network/'><img src='https://img.shields.io/github/forks/alDuncanson/react-hooks-snippets.svg?style=social&label=Fork&maxAge=2592000'/></a>
 	<a href='https://github.com/alDuncanson/react-hooks-snippets/blob/master/LICENSE.txt'><img src='https://img.shields.io/github/license/alDuncanson/react-hooks-snippets.svg'/></a>
 </p>
-
----
 
 
 # React Hooks Snippets
