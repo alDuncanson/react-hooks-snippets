@@ -11,7 +11,7 @@
 		"body": [
 			"useEffect(() => {",
 			"\t$1",
-			"\n\treturn cleanUp = () => {",
+			"\n\treturn () => {",
 			"\t\t$2",
 			"\t}",
 			"}, [${3}]);$0"
