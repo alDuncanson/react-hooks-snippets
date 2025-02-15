@@ -4,40 +4,59 @@
 
 # React Hooks Snippets
 
-React Hooks Snippets is a [Visual Studio Code](https://code.visualstudio.com/) extension to make writing ReactJS [Hooks](https://react.dev/reference/react/hooks) easier and faster!
+React Hooks Snippets is a [Visual Studio Code](https://code.visualstudio.com/) extension to make writing [React Hooks](https://react.dev/reference/react/hooks) easier and faster!
 
 
-## Supported Snippets
+## Supported Hooks
 
+### State Hooks
 | Prefix  | Snippet |
 | ------------- | ------------- |
 | `ush` | `useState` |
-| `uth` | `useTransitionHook` |
+| `urdh` | `useReducer` |
+
+### Context Hooks
+| Prefix  | Snippet |
+| ------------- | ------------- |
+| `uch` | `useContext` |
+
+### Ref Hooks
+| Prefix  | Snippet |
+| ------------- | ------------- |
+| `urh` | `useRef` |
+| `uihh` | `useImperativeHandle` |
+
+### Effect Hooks
+| Prefix  | Snippet |
+| ------------- | ------------- |
+| `ueh` | `useEffect` |
+| `uleh` | `useLayoutEffect` |
+| `uieh` | `useInsertionEffect` |
+
+### Performance Hooks
+| Prefix  | Snippet |
+| ------------- | ------------- |
+| `umh` | `useMemo` |
+| `ucbh` | `useCallback` |
+| `uth` | `useTransition` |
 | `udvh` | `useDeferredValue` |
+
+### Other Hooks
+| Prefix  | Snippet |
+| ------------- | ------------- |
 | `udbvh` | `useDebugValue` |
 | `uidh` | `useId` |
 | `usesh` | `useSyncExternalStore` |
 | `uash` | `useActionState` |
-| `ueh` | `useEffect` |
-| `uleh` | `useLayoutEffect` |
-| `uieh` | `useInsertionEffect` |
-| `uch` | `useContext` |
-| `ucbh` | `useCallback` |
-| `umh` | `useMemo` |
-| `irh` | `import React` (and common hooks) |
-| `urh` | `useRef` |
-| `uihh` | `useImperativeHandle` |
-| `urdh` | `useReducer` |
-
 
 ## Add to your project
 
 There are 2 ways you can add React Hooks Snippets to your project:
 
-#### By command
+### By command
 Launch VS Code Quick Open (`Ctrl+P`), paste `ext install AlDuncanson.react-hooks-snippets`, and press enter.
 
-#### By the Extension Marketplace
+### By the Extension Marketplace
 Launch VS Code Extension Marketplace (Ctrl+Shift+X), search for `React Hooks Snippets`, and look for my logo!
 
 
@@ -45,10 +64,10 @@ Launch VS Code Extension Marketplace (Ctrl+Shift+X), search for `React Hooks Sni
 
 There are two ways to contribute:
 
-#### Code
+### Code
 Submit a pull request with your proposed fixes, changes, and/or improvements. All are welcome!
 
-#### Coffee
+### Coffee
 <a href='https://www.buymeacoffee.com/alduncanson' target='_blank'><img src='https://cdn.buymeacoffee.com/buttons/default-orange.png' alt='Buy Me A Coffee' height='34' width='144'></a>
 
 ## License

@@ -6,6 +6,87 @@
 		],
 		"description": "React useState() hook"
 	},
+	"useReducer": {
+		"prefix": "urdh",
+		"body": [
+			"const [${1:state},${2: dispatch}] = useReducer(${3:reducer}, ${4:initialArg}, ${5:init});"
+		],
+		"description": "React useReducer() hook"
+	},
+	"useContext": {
+		"prefix": "uch",
+		"body": [
+			"const $1 = useContext($2);$0"
+		],
+		"description": "React useContext() hook"
+	},
+	"useRef": {
+		"prefix": "urh",
+		"body": [
+			"const $1 = useRef($2);$0"
+		],
+		"description": "React useRef() hook"
+	},
+	"useImperativeHandle": {
+		"prefix": "uihh",
+		"body": [
+			"useImperativeHandle(ref, () => {",
+			"\treturn {",
+			"\t\t$1",
+			"\t}",
+			"}, [$2]);$0"
+		],
+		"description": "React useImperativeHandle() hook"
+	},
+	"useEffect": {
+		"prefix": "ueh",
+		"body": [
+			"useEffect(() => {",
+			"\t$1",
+			"\n\treturn () => {",
+			"\t\t$2",
+			"\t}",
+			"}, [${3}]);$0"
+		],
+		"description": "React useEffect() hook"
+	},
+	"useLayoutEffect": {
+		"prefix": "uleh",
+		"body": [
+			"useLayoutEffect(() => {",
+			"\t$1",
+			"}, [${2}]);$0"
+		],
+		"description": "React useLayoutEffect() hook"
+	},
+	"useInsertionEffect": {
+		"prefix": "uieh",
+		"body": [
+			"useInsertionEffect(() => {",
+			"\t$1",
+			"}, [${2}]);$0"
+		],
+		"description": "React useInsertionEffect() hook"
+	},
+	"useMemo": {
+		"prefix": "umh",
+		"body": [
+			"const ${1:memoizedValue} = useMemo(() => ${2:computeExpensiveValue}(${3:a}, ${4:b}), [${5:a}, ${6:b}]);$0"
+		],
+		"description": "React useMemo() hook"
+	},
+	"useCallback": {
+		"prefix": "ucbh",
+		"body": [
+			"const ${1:memoizedCallback} = useCallback(",
+			"\t() => {",
+			"\t\t${2:doSomething}(${3:a}, ${4:b})",
+			"\t},",
+			"\t[${5:a}, ${6:b}],",
+			");$0"
+		],
+		"description": "React useCallback() hook"
+	},
 	"useTransition": {
 		"prefix": "uth",
 		"body": [
@@ -47,92 +128,5 @@
 			"const [${1:state}, ${2:formAction}, ${3:isPending}] = useActionState(${4:fn}, ${5:initialState});$0"
 		],
 		"description": "React useActionState() hook"
-	},
-	"useEffect": {
-		"prefix": "ueh",
-		"body": [
-			"useEffect(() => {",
-			"\t$1",
-			"\n\treturn () => {",
-			"\t\t$2",
-			"\t}",
-			"}, [${3}]);$0"
-		],
-		"description": "React useEffect() hook"
-	},
-	"useLayoutEffect": {
-		"prefix": "uleh",
-		"body": [
-			"useLayoutEffect(() => {",
-			"\t$1",
-			"}, [${2}]);$0"
-		],
-		"description": "React useLayoutEffect() hook"
-	},
-	"useInsertionEffect": {
-		"prefix": "uieh",
-		"body": [
-			"useInsertionEffect(() => {",
-			"\t$1",
-			"}, [${2}]);$0"
-		],
-		"description": "React useInsertionEffect() hook"
-	},
-	"useContext": {
-		"prefix": "uch",
-		"body": [
-			"const $1 = useContext($2);$0"
-		],
-		"description": "React useContext() hook"
-	},
-	"useCallback": {
-		"prefix": "ucbh",
-		"body": [
-			"const ${1:memoizedCallback} = useCallback(",
-			"\t() => {",
-			"\t\t${2:doSomething}(${3:a}, ${4:b})",
-			"\t},",
-			"\t[${5:a}, ${6:b}],",
-			");$0"
-		],
-		"description": "React useCallback() hook"
-	},
-	"useMemo": {
-		"prefix": "umh",
-		"body": [
-			"const ${1:memoizedValue} = useMemo(() => ${2:computeExpensiveValue}(${3:a}, ${4:b}), [${5:a}, ${6:b}]);$0"
-		],
-		"description": "React useMemo() hook"
-	},
-	"import react hooks": {
-		"prefix": "irh",
-		"body": [
-			"import React, { useState, useContext, useEffect, useCallback, useMemo } from 'react';"
-		]
-	},
-	"useRef": {
-		"prefix": "urh",
-		"body": [
-			"const $1 = useRef($2);$0"
-		],
-		"description": "React useRef() hook"
-	},
-	"useImperativeHandle": {
-		"prefix": "uihh",
-		"body": [
-			"useImperativeHandle(ref, () => {",
-			"\treturn {",
-			"\t\t$1",
-			"\t}",
-			"}, [$2]);$0"
-		],
-		"description": "React useImperativeHandle() hook"
-	},
-	"useReducer": {
-		"prefix": "urdh",
-		"body": [
-			"const [${1:state},${2: dispatch}] = useReducer(${3:reducer}, ${4:initialArg}, ${5:init});"
-		],
-		"description": "React useReducer() hook"
 	}
 }
