@@ -20,6 +20,13 @@
 		],
 		"description": "React useDeferredValue() hook"
 	},
+	"useDebugValue": {
+		"prefix": "udbvh",
+		"body": [
+			"useDebugValue(${1:value});$0"
+		],
+		"description": "React useDebugValue() hook"
+	},
 	"useEffect": {
 		"prefix": "ueh",
 		"body": [
