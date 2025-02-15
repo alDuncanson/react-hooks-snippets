@@ -27,6 +27,15 @@
 		],
 		"description": "React useLayoutEffect() hook"
 	},
+	"useInsertionEffect": {
+		"prefix": "uieh",
+		"body": [
+			"useInsertionEffect(() => {",
+			"\t$1",
+			"}, [${2}]);$0"
+		],
+		"description": "React useInsertionEffect() hook"
+	},
 	"useContext": {
 		"prefix": "uch",
 		"body": [
