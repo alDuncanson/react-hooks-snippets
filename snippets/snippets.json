@@ -13,6 +13,13 @@
 		],
 		"description": "React useTransition() hook"
 	},
+	"useDeferredValue": {
+		"prefix": "udvh",
+		"body": [
+			"const ${1:deferredValue} = useDeferredValue(${2:value});$0"
+		],
+		"description": "React useDeferredValue() hook"
+	},
 	"useEffect": {
 		"prefix": "ueh",
 		"body": [
