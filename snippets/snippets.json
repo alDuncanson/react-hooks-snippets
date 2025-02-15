@@ -134,29 +134,5 @@
 			"const [${1:state},${2: dispatch}] = useReducer(${3:reducer}, ${4:initialArg}, ${5:init});"
 		],
 		"description": "React useReducer() hook"
-	},
-	"import react-redux hooks": {
-		"prefix": "irrh",
-		"body": [
-			"import { useSelector, useDispatch } from 'react-redux';"
-		]
-	},
-	"useSelector": {
-		"prefix": "uss",
-		"body": [
-			"const $1 = useSelector(state => state.$1);"
-		]
-	},
-	"useDispatchFunction": {
-		"prefix": "usdf",
-		"body": [
-			"const $1 = useDispatch($2);$3"
-		]
-	},
-	"useDispatch": {
-		"prefix": "usd",
-		"body": [
-			"const $1 = $2 => dispatch($3);"
-		]
 	}
 }

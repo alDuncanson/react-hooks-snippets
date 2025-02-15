@@ -28,10 +28,6 @@ React Hooks Snippets is a [Visual Studio Code](https://code.visualstudio.com/) e
 | `urh` | `useRef` |
 | `uihh` | `useImperativeHandle` |
 | `urdh` | `useReducer` |
-| `irrh` | import react redux hooks |
-| `uss` | `useSelector` |
-| `usdf` | `useDispatch` |
-| `usd` | then use your `dispatch` |
 
 
 ## Add to your project
