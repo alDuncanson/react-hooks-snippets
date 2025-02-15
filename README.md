@@ -18,6 +18,7 @@ React Hooks Snippets is a [Visual Studio Code](https://code.visualstudio.com/) e
 | `umh` | `useMemo` |
 | `irh` | `import React` (and common hooks) |
 | `urh` | `useRef` |
+| `uihh` | `useImperativeHandle` |
 | `urdh` | `useReducer` |
 | `irrh` | import react redux hooks |
 | `uss` | `useSelector` |

@@ -57,6 +57,17 @@
 		],
 		"description": "React useRef() hook"
 	},
+	"useImperativeHandle": {
+		"prefix": "uihh",
+		"body": [
+			"useImperativeHandle(ref, () => {",
+			"\treturn {",
+			"\t\t$1",
+			"\t}",
+			"}, [$2]);$0"
+		],
+		"description": "React useImperativeHandle() hook"
+	},
 	"useReducer": {
 		"prefix": "urdh",
 		"body": [
