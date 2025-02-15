@@ -6,6 +6,13 @@
 		],
 		"description": "React useState() hook"
 	},
+	"useTransition": {
+		"prefix": "uth",
+		"body": [
+			"const [isPending, startTransition] = useTransition();$0"
+		],
+		"description": "React useTransition() hook"
+	},
 	"useEffect": {
 		"prefix": "ueh",
 		"body": [
