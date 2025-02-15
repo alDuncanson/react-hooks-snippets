@@ -41,6 +41,13 @@
 		],
 		"description": "React useSyncExternalStore() hook"
 	},
+	"useActionState": {
+		"prefix": "uash",
+		"body": [
+			"const [${1:state}, ${2:formAction}, ${3:isPending}] = useActionState(${4:fn}, ${5:initialState});$0"
+		],
+		"description": "React useActionState() hook"
+	},
 	"useEffect": {
 		"prefix": "ueh",
 		"body": [
