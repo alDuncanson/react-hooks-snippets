@@ -27,6 +27,13 @@
 		],
 		"description": "React useDebugValue() hook"
 	},
+	"useId": {
+		"prefix": "uidh",
+		"body": [
+			"const ${1:id} = useId();$0"
+		],
+		"description": "React useId() hook"
+	},
 	"useEffect": {
 		"prefix": "ueh",
 		"body": [

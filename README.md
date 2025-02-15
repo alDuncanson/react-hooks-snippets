@@ -15,6 +15,7 @@ React Hooks Snippets is a [Visual Studio Code](https://code.visualstudio.com/) e
 | `uth` | `useTransitionHook` |
 | `udvh` | `useDeferredValue` |
 | `udbvh` | `useDebugValue` |
+| `uidh` | `useId` |
 | `ueh` | `useEffect` |
 | `uleh` | `useLayoutEffect` |
 | `uieh` | `useInsertionEffect` |
