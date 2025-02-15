@@ -18,6 +18,15 @@
 		],
 		"description": "React useEffect() hook"
 	},
+	"useLayoutEffect": {
+		"prefix": "uleh",
+		"body": [
+			"useLayoutEffect(() => {",
+			"\t$1",
+			"}, [${2}]);$0"
+		],
+		"description": "React useLayoutEffect() hook"
+	},
 	"useContext": {
 		"prefix": "uch",
 		"body": [
