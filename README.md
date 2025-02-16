@@ -6,7 +6,6 @@
 
 React Hooks Snippets is a [Visual Studio Code](https://code.visualstudio.com/) extension to make writing [React Hooks](https://react.dev/reference/react/hooks) easier and faster!
 
-
 ## Supported Hooks
 
 ### State Hooks
@@ -48,6 +47,7 @@ React Hooks Snippets is a [Visual Studio Code](https://code.visualstudio.com/) e
 | `uidh` | `useId` |
 | `usesh` | `useSyncExternalStore` |
 | `uash` | `useActionState` |
+| `uoh` | `useOptimistic` |
 
 ## Add to your project
 

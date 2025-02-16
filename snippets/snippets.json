@@ -128,5 +128,12 @@
 			"const [${1:state}, ${2:formAction}, ${3:isPending}] = useActionState(${4:fn}, ${5:initialState});$0"
 		],
 		"description": "React useActionState() hook"
+	},
+	"useOptimistic": {
+		"prefix": "uoh",
+		"body": [
+			"const [${1:optimisticState}, ${2:addOptimistic}] = useOptimistic(${3:state}, ${4:updateFn});$0"
+		],
+		"description": "React useOptimistic() hook"
 	}
 }
