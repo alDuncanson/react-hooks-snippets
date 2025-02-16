@@ -40,6 +40,11 @@ React Hooks Snippets is a [Visual Studio Code](https://code.visualstudio.com/) e
 | `uth` | `useTransition` |
 | `udvh` | `useDeferredValue` |
 
+### React Dom Hooks
+| Prefix  | Snippet |
+| ------------- | ------------- |
+| `ufsh` | `useFormStatus` |
+
 ### Other Hooks
 | Prefix  | Snippet |
 | ------------- | ------------- |

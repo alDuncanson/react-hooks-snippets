@@ -101,6 +101,13 @@
 		],
 		"description": "React useDeferredValue() hook"
 	},
+	"useFormStatus": {
+		"prefix": "ufsh",
+		"body": [
+			"const { ${1:pending}, ${2:data}, ${3:method}, ${4:action} } = useFormStatus();$0"
+		],
+		"description": "React Dom useFormStatus() hook"
+	},
 	"useDebugValue": {
 		"prefix": "udbvh",
 		"body": [
