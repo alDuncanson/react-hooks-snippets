@@ -6,6 +6,38 @@
 		],
 		"description": "React useState() hook"
 	},
+	"useReducer": {
+		"prefix": "urdh",
+		"body": [
+			"const [${1:state},${2: dispatch}] = useReducer(${3:reducer}, ${4:initialArg}, ${5:init});"
+		],
+		"description": "React useReducer() hook"
+	},
+	"useContext": {
+		"prefix": "uch",
+		"body": [
+			"const $1 = useContext($2);$0"
+		],
+		"description": "React useContext() hook"
+	},
+	"useRef": {
+		"prefix": "urh",
+		"body": [
+			"const $1 = useRef($2);$0"
+		],
+		"description": "React useRef() hook"
+	},
+	"useImperativeHandle": {
+		"prefix": "uihh",
+		"body": [
+			"useImperativeHandle(ref, () => {",
+			"\treturn {",
+			"\t\t$1",
+			"\t}",
+			"}, [$2]);$0"
+		],
+		"description": "React useImperativeHandle() hook"
+	},
 	"useEffect": {
 		"prefix": "ueh",
 		"body": [
@@ -18,12 +50,30 @@
 		],
 		"description": "React useEffect() hook"
 	},
-	"useContext": {
-		"prefix": "uch",
+	"useLayoutEffect": {
+		"prefix": "uleh",
 		"body": [
-			"const $1 = useContext($2);$0"
+			"useLayoutEffect(() => {",
+			"\t$1",
+			"}, [${2}]);$0"
 		],
-		"description": "React useContext() hook"
+		"description": "React useLayoutEffect() hook"
+	},
+	"useInsertionEffect": {
+		"prefix": "uieh",
+		"body": [
+			"useInsertionEffect(() => {",
+			"\t$1",
+			"}, [${2}]);$0"
+		],
+		"description": "React useInsertionEffect() hook"
+	},
+	"useMemo": {
+		"prefix": "umh",
+		"body": [
+			"const ${1:memoizedValue} = useMemo(() => ${2:computeExpensiveValue}(${3:a}, ${4:b}), [${5:a}, ${6:b}]);$0"
+		],
+		"description": "React useMemo() hook"
 	},
 	"useCallback": {
 		"prefix": "ucbh",
@@ -37,55 +87,60 @@
 		],
 		"description": "React useCallback() hook"
 	},
-	"useMemo": {
-		"prefix": "umh",
+	"useTransition": {
+		"prefix": "uth",
 		"body": [
-			"const ${1:memoizedValue} = useMemo(() => ${2:computeExpensiveValue}(${3:a}, ${4:b}), [${5:a}, ${6:b}]);$0"
+			"const [isPending, startTransition] = useTransition();$0"
 		],
-		"description": "React useMemo() hook"
+		"description": "React useTransition() hook"
 	},
-	"import react hooks": {
-		"prefix": "irh",
+	"useDeferredValue": {
+		"prefix": "udvh",
 		"body": [
-			"import React, { useState, useContext, useEffect, useCallback, useMemo } from 'react';"
-		]
-	},
-	"useRef": {
-		"prefix": "urh",
-		"body": [
-			"const $1 = useRef($2);$0"
+			"const ${1:deferredValue} = useDeferredValue(${2:value});$0"
 		],
-		"description": "React useRef() hook"
+		"description": "React useDeferredValue() hook"
 	},
-	"useReducer": {
-		"prefix": "urdh",
+	"useFormStatus": {
+		"prefix": "ufsh",
 		"body": [
-			"const [${1:state},${2: dispatch}] = useReducer(${3:reducer}, ${4:initialArg}, ${5:init});"
+			"const { ${1:pending}, ${2:data}, ${3:method}, ${4:action} } = useFormStatus();$0"
 		],
-		"description": "React useReducer() hook"
+		"description": "React Dom useFormStatus() hook"
 	},
-	"import react-redux hooks": {
-		"prefix": "irrh",
+	"useDebugValue": {
+		"prefix": "udbvh",
 		"body": [
-			"import { useSelector, useDispatch } from 'react-redux';"
-		]
+			"useDebugValue(${1:value});$0"
+		],
+		"description": "React useDebugValue() hook"
 	},
-	"useSelector": {
-		"prefix": "uss",
+	"useId": {
+		"prefix": "uidh",
 		"body": [
-			"const $1 = useSelector(state => state.$1);"
-		]
+			"const ${1:id} = useId();$0"
+		],
+		"description": "React useId() hook"
 	},
-	"useDispatchFunction": {
-		"prefix": "usdf",
+	"useSyncExternalStore": {
+		"prefix": "usesh",
 		"body": [
-			"const $1 = useDispatch($2);$3"
-		]
+			"const ${1:snapshot} = useSyncExternalStore(${2:subscribe}, ${3:getSnapshot}, ${4:getServerSnapshot});$0"
+		],
+		"description": "React useSyncExternalStore() hook"
 	},
-	"useDispatch": {
-		"prefix": "usd",
+	"useActionState": {
+		"prefix": "uash",
 		"body": [
-			"const $1 = $2 => dispatch($3);"
-		]
+			"const [${1:state}, ${2:formAction}, ${3:isPending}] = useActionState(${4:fn}, ${5:initialState});$0"
+		],
+		"description": "React useActionState() hook"
+	},
+	"useOptimistic": {
+		"prefix": "uoh",
+		"body": [
+			"const [${1:optimisticState}, ${2:addOptimistic}] = useOptimistic(${3:state}, ${4:updateFn});$0"
+		],
+		"description": "React useOptimistic() hook"
 	}
 }
