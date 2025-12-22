@@ -11,5 +11,8 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+      - name: Validate snippets JSON
+        run: node -e "JSON.parse(require('fs').readFileSync('snippets/snippets.json'))"
+
       - name: Publish to VS Marketplace
         run: npx @vscode/vsce publish -p ${{ secrets.VSCE_PAT }}
