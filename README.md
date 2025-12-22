@@ -61,6 +61,7 @@ A [Visual Studio Code](https://code.visualstudio.com/) extension that adds snipp
 | `usesh` | `useSyncExternalStore` |
 | `uash` | `useActionState` |
 | `uoh` | `useOptimistic` |
+| `uuh` | `use` |
 
 ## Install
 
