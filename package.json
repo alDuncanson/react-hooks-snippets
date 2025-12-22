@@ -2,7 +2,7 @@
 	"name": "react-hooks-snippets",
 	"displayName": "React Hooks Snippets",
 	"description": "Code snippets for React Hooks",
-	"version": "2.0.0",
+	"version": "3.0.0",
 	"icon": "icon.png",
 	"publisher": "AlDuncanson",
 	"repository": {
@@ -13,12 +13,18 @@
 		"react",
 		"hooks",
 		"javascript",
+		"typescript",
 		"es6",
 		"snippets",
 		"snippet"
 	],
 	"engines": {
-		"vscode": "^1.33.0"
+		"vscode": "^1.85.0"
+	},
+	"scripts": {
+		"lint": "node -e \"JSON.parse(require('fs').readFileSync('snippets/snippets.json'))\"",
+		"package": "vsce package",
+		"publish": "vsce publish"
 	},
 	"categories": [
 		"Snippets"
