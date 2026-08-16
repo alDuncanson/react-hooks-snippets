@@ -13,6 +13,8 @@ on everything you'd want to edit. It works in JavaScript, TypeScript, and
 JSX/TSX files, and covers every current hook — including the newly stable
 `useEffectEvent` — plus the `use` API and react-dom's `useFormStatus`.
 
+![Building a search component with three snippets: ush expands to useState, udvh to useDeferredValue, and umh to useMemo](https://raw.githubusercontent.com/alDuncanson/react-hooks-snippets/50cc799c3a03d93f94c0f2608874ecc741d8e73d/assets/demo.gif)
+
 Prefixes follow one simple pattern: `u` + the hook's initials + `h`. So `ush`
 is **u**se**S**tate **h**ook, `ueh` is **u**se**E**ffect **h**ook, and `ucbh`
 is **u**se**C**all**b**ack **h**ook:
