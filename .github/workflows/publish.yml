@@ -20,12 +20,6 @@ jobs:
       - name: Publish to VS Marketplace
         run: npx @vscode/vsce publish -p ${{ secrets.VSCE_PAT }}
 
-      - name: Publish to Open VSX
-        run: |
-          # create-namespace is one-time; it fails harmlessly once the namespace exists
-          npx ovsx create-namespace AlDuncanson -p ${{ secrets.OVSX_PAT }} || true
-          npx ovsx publish -p ${{ secrets.OVSX_PAT }}
-
       - name: Create GitHub release
         env:
           GH_TOKEN: ${{ github.token }}
@@ -34,3 +28,12 @@ jobs:
             --title "$GITHUB_REF_NAME" \
             --notes "# React Hooks Snippets $GITHUB_REF_NAME 🚀" \
             --generate-notes
+
+      # Last on purpose: an Open VSX failure must not block the release.
+      # Currently failing — the ID was blocklisted after an impersonation
+      # campaign; unblock is tracked with the Open VSX registry operators.
+      - name: Publish to Open VSX
+        run: |
+          # create-namespace is one-time; it fails harmlessly once the namespace exists
+          npx ovsx create-namespace AlDuncanson -p ${{ secrets.OVSX_PAT }} || true
+          npx ovsx publish -p ${{ secrets.OVSX_PAT }}
