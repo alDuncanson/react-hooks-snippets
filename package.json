@@ -22,7 +22,7 @@
 		"vscode": "^1.85.0"
 	},
 	"scripts": {
-		"lint": "node -e \"JSON.parse(require('fs').readFileSync('snippets/snippets.json'))\"",
+		"lint": "node scripts/validate.mjs",
 		"package": "vsce package",
 		"publish": "vsce publish"
 	},
