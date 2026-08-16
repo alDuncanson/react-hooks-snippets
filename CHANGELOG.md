@@ -2,6 +2,15 @@
 
 All notable changes to the React Hooks Snippets extension.
 
+## [3.1.2] — 2026-08-16
+
+- Now published to [Open VSX](https://open-vsx.org/) for VSCodium, Gitpod,
+  and other non-Microsoft editors
+- Added this changelog
+- Maintenance automation: a monthly watchdog opens an issue if the snippets
+  drift from the hooks documented on react.dev, and CI now validates snippet
+  structure and README consistency
+
 ## [3.1.1] — 2026-08-16
 
 - Refreshed README: intro, snippet tables grouped by react.dev category with
