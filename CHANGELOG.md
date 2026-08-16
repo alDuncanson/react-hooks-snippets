@@ -2,6 +2,18 @@
 
 All notable changes to the React Hooks Snippets extension.
 
+## [3.1.3] — 2026-08-16
+
+- First release on [Open VSX](https://open-vsx.org/extension/AlDuncanson/react-hooks-snippets)
+  for VSCodium, Gitpod, and other non-Microsoft editors
+- Documented Neovim support — the snippets load directly via LuaSnip's
+  `from_vscode` loader
+- Optimized the extension package: 106 KB → 13 KB (resized and quantized the
+  icon, dropped repo files that don't belong in the package)
+- Packaged `.vsix` files are now attached to GitHub releases for manual and
+  offline installs
+- Per-editor install docs in the README
+
 ## [3.1.2] — 2026-08-16
 
 - Now published to [Open VSX](https://open-vsx.org/) for VSCodium, Gitpod,
