@@ -20,6 +20,12 @@ jobs:
       - name: Publish to VS Marketplace
         run: npx @vscode/vsce publish -p ${{ secrets.VSCE_PAT }}
 
+      - name: Publish to Open VSX
+        run: |
+          # create-namespace is one-time; it fails harmlessly once the namespace exists
+          npx ovsx create-namespace AlDuncanson -p ${{ secrets.OVSX_PAT }} || true
+          npx ovsx publish -p ${{ secrets.OVSX_PAT }}
+
       - name: Create GitHub release
         env:
           GH_TOKEN: ${{ github.token }}
