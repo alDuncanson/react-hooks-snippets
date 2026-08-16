@@ -6,3 +6,4 @@ scripts/**
 vsc-extension-quickstart.md
 *.vsix
 assets/**
+!assets/icon.png

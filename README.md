@@ -25,10 +25,32 @@ ush⇥  →  const [count, setCount] = useState(0);
 
 ## Install
 
-Install [React Hooks Snippets](https://marketplace.visualstudio.com/items?itemName=AlDuncanson.react-hooks-snippets)
-from the Visual Studio Marketplace. New to extensions? See the
-[official VS Code docs](https://code.visualstudio.com/docs/configure/extensions/extensions)
-for up-to-date install instructions.
+**VS Code** — install from the
+[Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=AlDuncanson.react-hooks-snippets).
+New to extensions? See the
+[official VS Code docs](https://code.visualstudio.com/docs/configure/extensions/extensions).
+
+**VSCodium, Gitpod & other Open VSX editors** — grab the `.vsix` from the
+[latest release](https://github.com/alDuncanson/react-hooks-snippets/releases/latest)
+and run `codium --install-extension react-hooks-snippets-<version>.vsix`.
+(An Open VSX listing is on the way.)
+
+**Neovim** — this repo doubles as a
+[LuaSnip](https://github.com/L3MON4D3/LuaSnip) snippet source, no port
+needed. Add it with your plugin manager and load VS Code-format snippets:
+
+```lua
+-- lazy.nvim
+{ "alDuncanson/react-hooks-snippets" },
+```
+
+```lua
+require("luasnip.loaders.from_vscode").lazy_load()
+```
+
+Snippets surface through your completion engine
+([blink.cmp](https://github.com/Saghen/blink.cmp),
+[nvim-cmp](https://github.com/hrsh7th/nvim-cmp)) or a LuaSnip expand keymap.
 
 ## Snippets
 
