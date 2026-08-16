@@ -1,7 +1,7 @@
 {
 	"name": "react-hooks-snippets",
 	"displayName": "React Hooks Snippets",
-	"description": "Code snippets for React Hooks",
+	"description": "A snippet for every React hook",
 	"version": "3.1.2",
 	"icon": "assets/icon.png",
 	"publisher": "AlDuncanson",
@@ -14,7 +14,7 @@
 		"hooks",
 		"javascript",
 		"typescript",
-		"es6",
+		"react-hooks",
 		"snippets",
 		"snippet"
 	],
