@@ -12,8 +12,8 @@ jobs:
     steps:
       - uses: actions/checkout@v5
 
-      - name: Validate snippets JSON
-        run: node -e "JSON.parse(require('fs').readFileSync('snippets/snippets.json'))"
+      - name: Validate snippets and README
+        run: node scripts/validate.mjs
 
       - name: Check extension can be packaged
         run: npx @vscode/vsce ls
