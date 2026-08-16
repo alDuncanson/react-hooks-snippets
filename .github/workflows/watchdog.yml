@@ -1,0 +1,39 @@
+name: Hooks Watchdog
+
+on:
+  schedule:
+    - cron: '0 12 1 * *' # monthly, 1st at 12:00 UTC
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+
+      - name: Compare snippets against react.dev
+        id: check
+        shell: bash
+        continue-on-error: true
+        run: node scripts/check-hooks.mjs | tee report.md
+
+      - name: Open issue on drift
+        if: steps.check.outcome == 'failure'
+        shell: bash
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh label create hooks-watchdog --color D93F0B --force \
+            --description "Opened automatically by the hooks watchdog"
+          if [ -z "$(gh issue list --repo "$GITHUB_REPOSITORY" --label hooks-watchdog --state open --json number --jq '.[0].number // empty')" ]; then
+            gh issue create --repo "$GITHUB_REPOSITORY" \
+              --title "Snippets are out of sync with the React docs" \
+              --label hooks-watchdog \
+              --body-file report.md
+          else
+            echo "Watchdog issue already open — skipping."
+          fi

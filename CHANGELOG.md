@@ -1,0 +1,43 @@
+# Changelog
+
+All notable changes to the React Hooks Snippets extension.
+
+## [3.1.1] — 2026-08-16
+
+- Refreshed README: intro, snippet tables grouped by react.dev category with
+  expansion previews and doc links, new badges, and a demo GIF
+- CI: bumped `actions/checkout` to v5; releases are now created automatically
+  when a version is published
+
+## [3.1.0] — 2026-08-16
+
+- Added `ueeh` snippet for `useEffectEvent` (stable as of React 19.2)
+- Replaced retired shields.io marketplace badges with vsmarketplacebadges.dev
+
+## [3.0.0] — 2025-12-22
+
+- Added `uuh` snippet for the `use` API
+- Added CI and publish workflows — releases are now published to the
+  Marketplace automatically from version tags
+
+## [2.0.0] — 2025-02-16
+
+- Added snippets for the React 19 hooks: `useActionState`, `useOptimistic`,
+  `useFormStatus`, `useTransition`, `useDeferredValue`, `useId`,
+  `useSyncExternalStore`, `useInsertionEffect`, and more
+- Removed outdated and unrelated snippets (including the redux snippets)
+- From this release forward the extension tracks the hooks documented by
+  React and React DOM
+
+## [1.3.0] — 2025-02-15
+
+- Removed `cleanUp =` from the `ueh` (useEffect) snippet body
+  (thanks @keemor)
+
+## [1.2.0] — 2020-10-21
+
+- Fixed the `urdh` (useReducer) snippet
+- Removed the broken `prev` snippet
+
+Earlier releases predate this changelog — see the
+[git history](https://github.com/alDuncanson/react-hooks-snippets/commits/master).
