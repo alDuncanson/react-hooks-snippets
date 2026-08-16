@@ -68,6 +68,15 @@
 		],
 		"description": "React useInsertionEffect() hook"
 	},
+	"useEffectEvent": {
+		"prefix": "ueeh",
+		"body": [
+			"const ${1:onEvent} = useEffectEvent(($2) => {",
+			"\t$3",
+			"});$0"
+		],
+		"description": "React useEffectEvent() hook"
+	},
 	"useMemo": {
 		"prefix": "umh",
 		"body": [

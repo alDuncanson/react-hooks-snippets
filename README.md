@@ -1,8 +1,8 @@
 # React Hooks Snippets
 
 [![CI](https://github.com/alDuncanson/react-hooks-snippets/actions/workflows/ci.yml/badge.svg)](https://github.com/alDuncanson/react-hooks-snippets/actions/workflows/ci.yml)
-[![Visual Studio Marketplace](https://img.shields.io/visual-studio-marketplace/v/AlDuncanson.react-hooks-snippets)](https://marketplace.visualstudio.com/items?itemName=AlDuncanson.react-hooks-snippets)
-[![Installs](https://img.shields.io/visual-studio-marketplace/i/AlDuncanson.react-hooks-snippets)](https://marketplace.visualstudio.com/items?itemName=AlDuncanson.react-hooks-snippets)
+[![Visual Studio Marketplace](https://vsmarketplacebadges.dev/version/AlDuncanson.react-hooks-snippets.svg)](https://marketplace.visualstudio.com/items?itemName=AlDuncanson.react-hooks-snippets)
+[![Installs](https://vsmarketplacebadges.dev/installs-short/AlDuncanson.react-hooks-snippets.svg)](https://marketplace.visualstudio.com/items?itemName=AlDuncanson.react-hooks-snippets)
 
 VS Code snippets for React Hooks.
 
@@ -24,6 +24,7 @@ Or search "React Hooks Snippets" in the Extensions sidebar.
 | `ueh` | useEffect |
 | `uleh` | useLayoutEffect |
 | `uieh` | useInsertionEffect |
+| `ueeh` | useEffectEvent |
 | `umh` | useMemo |
 | `ucbh` | useCallback |
 | `uth` | useTransition |
