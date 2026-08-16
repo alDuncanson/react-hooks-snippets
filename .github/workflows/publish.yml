@@ -20,6 +20,9 @@ jobs:
       - name: Publish to VS Marketplace
         run: npx @vscode/vsce publish -p ${{ secrets.VSCE_PAT }}
 
+      - name: Package vsix
+        run: npx @vscode/vsce package
+
       - name: Create GitHub release
         env:
           GH_TOKEN: ${{ github.token }}
@@ -27,7 +30,8 @@ jobs:
           gh release create "$GITHUB_REF_NAME" \
             --title "$GITHUB_REF_NAME" \
             --notes "# React Hooks Snippets $GITHUB_REF_NAME 🚀" \
-            --generate-notes
+            --generate-notes \
+            react-hooks-snippets-*.vsix
 
       # Last on purpose: an Open VSX failure must not block the release.
       # Currently failing — the ID was blocklisted after an impersonation
