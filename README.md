@@ -6,12 +6,13 @@
 [![Rating](https://vsmarketplacebadges.dev/rating-short/AlDuncanson.react-hooks-snippets.svg?color=yellow)](https://marketplace.visualstudio.com/items?itemName=AlDuncanson.react-hooks-snippets&ssr=false#review-details)
 [![GitHub stars](https://img.shields.io/github/stars/alDuncanson/react-hooks-snippets)](https://github.com/alDuncanson/react-hooks-snippets/stargazers)
 
-React Hooks Snippets is a VS Code extension with a shorthand snippet for every
-hook in the [React docs](https://react.dev/reference/react/hooks). Type a short
-prefix, press <kbd>Tab</kbd>, and get a fully formed hook call with tab stops
-on everything you'd want to edit. It works in JavaScript, TypeScript, and
-JSX/TSX files, and covers every current hook — including the newly stable
-`useEffectEvent` — plus the `use` API and react-dom's `useFormStatus`.
+React Hooks Snippets gives you a shorthand snippet for every hook in the
+[React docs](https://react.dev/reference/react/hooks) — in VS Code, VSCodium,
+and Neovim. Type a short prefix, press <kbd>Tab</kbd>, and get a fully formed
+hook call with tab stops on everything you'd want to edit. It works in
+JavaScript, TypeScript, and JSX/TSX files, and covers every current hook —
+including the newly stable `useEffectEvent` — plus the `use` API and
+react-dom's `useFormStatus`.
 
 ![Building a search component with three snippets: ush expands to useState, udvh to useDeferredValue, and umh to useMemo](https://raw.githubusercontent.com/alDuncanson/react-hooks-snippets/2586d63/assets/demo.gif)
 
