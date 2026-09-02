@@ -3,23 +3,38 @@
 	"displayName": "React Hooks Snippets",
 	"description": "A snippet for every React hook",
 	"version": "3.1.3",
+	"license": "MIT",
 	"icon": "assets/icon.png",
 	"publisher": "AlDuncanson",
+	"homepage": "https://github.com/alDuncanson/react-hooks-snippets#readme",
 	"repository": {
 		"type": "git",
 		"url": "https://github.com/alDuncanson/react-hooks-snippets.git"
+	},
+	"bugs": {
+		"url": "https://github.com/alDuncanson/react-hooks-snippets/issues"
 	},
 	"keywords": [
 		"react",
 		"hooks",
 		"javascript",
 		"typescript",
+		"jsx",
+		"tsx",
 		"react-hooks",
 		"snippets",
-		"snippet"
+		"snippet",
+		"vscode",
+		"vscodium",
+		"open-vsx",
+		"cursor",
+		"devin-desktop",
+		"windsurf",
+		"neovim",
+		"luasnip"
 	],
 	"engines": {
-		"vscode": "^1.85.0"
+		"vscode": "^1.25.0"
 	},
 	"scripts": {
 		"lint": "node scripts/validate.mjs",

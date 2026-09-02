@@ -1,10 +1,8 @@
 # React Hooks Snippets
 
-[![CI](https://github.com/alDuncanson/react-hooks-snippets/actions/workflows/ci.yml/badge.svg)](https://github.com/alDuncanson/react-hooks-snippets/actions/workflows/ci.yml)
-[![Visual Studio Marketplace](https://vsmarketplacebadges.dev/version/AlDuncanson.react-hooks-snippets.svg?color=blue)](https://marketplace.visualstudio.com/items?itemName=AlDuncanson.react-hooks-snippets)
-[![Installs](https://vsmarketplacebadges.dev/installs-short/AlDuncanson.react-hooks-snippets.svg?color=8A2BE2)](https://marketplace.visualstudio.com/items?itemName=AlDuncanson.react-hooks-snippets)
-[![Rating](https://vsmarketplacebadges.dev/rating-short/AlDuncanson.react-hooks-snippets.svg?color=yellow)](https://marketplace.visualstudio.com/items?itemName=AlDuncanson.react-hooks-snippets&ssr=false#review-details)
-[![GitHub stars](https://img.shields.io/github/stars/alDuncanson/react-hooks-snippets)](https://github.com/alDuncanson/react-hooks-snippets/stargazers)
+[![CI](https://github.com/alDuncanson/react-hooks-snippets/actions/workflows/ci.yml/badge.svg)](https://github.com/alDuncanson/react-hooks-snippets/actions/workflows/ci.yml) [![Latest release](https://img.shields.io/github/v/release/alDuncanson/react-hooks-snippets?label=latest&color=blue)](https://github.com/alDuncanson/react-hooks-snippets/releases/latest) [![VS Marketplace installs](https://vsmarketplacebadges.dev/installs-short/AlDuncanson.react-hooks-snippets.svg?color=8A2BE2&label=VS%20Marketplace)](https://marketplace.visualstudio.com/items?itemName=AlDuncanson.react-hooks-snippets) [![Open VSX Registry downloads](https://img.shields.io/open-vsx/dt/AlDuncanson/react-hooks-snippets?label=Open%20VSX%20Registry)](https://open-vsx.org/extension/AlDuncanson/react-hooks-snippets) [![Rating](https://vsmarketplacebadges.dev/rating-short/AlDuncanson.react-hooks-snippets.svg?color=yellow)](https://marketplace.visualstudio.com/items?itemName=AlDuncanson.react-hooks-snippets&ssr=false#review-details)
+
+[![Spectra Assure Community Badge](https://secure.software/vscode/badge/alduncanson/react-hooks-snippets)](https://secure.software/vscode/packages/alduncanson/react-hooks-snippets) [![GitHub stars](https://img.shields.io/github/stars/alDuncanson/react-hooks-snippets)](https://github.com/alDuncanson/react-hooks-snippets/stargazers)
 
 React Hooks Snippets gives you a shorthand snippet for every hook in the
 [React docs](https://react.dev/reference/react/hooks) — in VS Code, VSCodium,
