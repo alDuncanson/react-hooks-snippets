@@ -34,7 +34,7 @@
 		"luasnip"
 	],
 	"engines": {
-		"vscode": "^1.85.0"
+		"vscode": "^1.25.0"
 	},
 	"scripts": {
 		"lint": "node scripts/validate.mjs",
