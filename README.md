@@ -8,11 +8,11 @@
 
 React Hooks Snippets gives you a shorthand snippet for every hook in the
 [React docs](https://react.dev/reference/react/hooks) — in VS Code, VSCodium,
-and Neovim. Type a short prefix, press <kbd>Tab</kbd>, and get a fully formed
-hook call with tab stops on everything you'd want to edit. It works in
-JavaScript, TypeScript, and JSX/TSX files, and covers every current hook —
-including the newly stable `useEffectEvent` — plus the `use` API and
-react-dom's `useFormStatus`.
+Cursor, Devin Desktop (formerly Windsurf), and Neovim. Type a short prefix,
+press <kbd>Tab</kbd>, and get a fully formed hook call with tab stops on
+everything you'd want to edit. It works in JavaScript, TypeScript, and JSX/TSX
+files, and covers every current hook — including the newly stable
+`useEffectEvent` — plus the `use` API and react-dom's `useFormStatus`.
 
 ![Building a search component with three snippets: ush expands to useState, udvh to useDeferredValue, and umh to useMemo](https://raw.githubusercontent.com/alDuncanson/react-hooks-snippets/2586d63/assets/demo.gif)
 
@@ -26,17 +26,22 @@ ush⇥  →  const [count, setCount] = useState(0);
 
 ## Install
 
-**VS Code** — install from the
+### Visual Studio Marketplace
+
+For VS Code, install from the
 [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=AlDuncanson.react-hooks-snippets).
 New to extensions? See the
 [official VS Code docs](https://code.visualstudio.com/docs/configure/extensions/extensions).
 
-**VSCodium, Gitpod & other Open VSX editors** — grab the `.vsix` from the
-[latest release](https://github.com/alDuncanson/react-hooks-snippets/releases/latest)
-and run `codium --install-extension react-hooks-snippets-<version>.vsix`.
-(An Open VSX listing is on the way.)
+### Open VSX
 
-**Neovim** — this repo doubles as a
+For VSCodium, Cursor, Devin Desktop (formerly Windsurf), Gitpod, and other
+compatible editors, install from
+[Open VSX](https://open-vsx.org/extension/AlDuncanson/react-hooks-snippets).
+
+### Neovim
+
+This repo doubles as a
 [LuaSnip](https://github.com/L3MON4D3/LuaSnip) snippet source, no port
 needed. Add it with your plugin manager and load VS Code-format snippets:
 
