@@ -7,9 +7,9 @@
 <p align="center">
   <a href="https://github.com/alDuncanson/react-hooks-snippets/actions/workflows/ci.yml"><img src="https://github.com/alDuncanson/react-hooks-snippets/actions/workflows/ci.yml/badge.svg" alt="CI"></a>
   <a href="https://marketplace.visualstudio.com/items?itemName=AlDuncanson.react-hooks-snippets"><img src="https://vsmarketplacebadges.dev/version/AlDuncanson.react-hooks-snippets.svg?color=blue" alt="Visual Studio Marketplace"></a>
-  <a href="https://marketplace.visualstudio.com/items?itemName=AlDuncanson.react-hooks-snippets"><img src="https://vsmarketplacebadges.dev/installs-short/AlDuncanson.react-hooks-snippets.svg?color=8A2BE2" alt="Installs"></a>
+  <a href="https://marketplace.visualstudio.com/items?itemName=AlDuncanson.react-hooks-snippets"><img src="https://vsmarketplacebadges.dev/installs-short/AlDuncanson.react-hooks-snippets.svg?color=8A2BE2&amp;label=VS%20Marketplace" alt="VS Marketplace installs"></a>
   <a href="https://marketplace.visualstudio.com/items?itemName=AlDuncanson.react-hooks-snippets&amp;ssr=false#review-details"><img src="https://vsmarketplacebadges.dev/rating-short/AlDuncanson.react-hooks-snippets.svg?color=yellow" alt="Rating"></a>
-  <a href="https://open-vsx.org/extension/AlDuncanson/react-hooks-snippets"><img src="https://img.shields.io/open-vsx/dt/AlDuncanson/react-hooks-snippets" alt="Open VSX Downloads"></a>
+  <a href="https://open-vsx.org/extension/AlDuncanson/react-hooks-snippets"><img src="https://img.shields.io/open-vsx/dt/AlDuncanson/react-hooks-snippets?label=Open%20VSX%20Registry" alt="Open VSX Registry downloads"></a>
   <a href="https://secure.software/vscode/packages/alduncanson/react-hooks-snippets"><img src="https://secure.software/vscode/badge/alduncanson/react-hooks-snippets" alt="Spectra Assure Community Badge"></a>
   <a href="https://github.com/alDuncanson/react-hooks-snippets/stargazers"><img src="https://img.shields.io/github/stars/alDuncanson/react-hooks-snippets" alt="GitHub stars"></a>
 </p>
