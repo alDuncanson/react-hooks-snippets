@@ -2,6 +2,15 @@
 
 All notable changes to the React Hooks Snippets extension.
 
+## [3.1.4] — 2026-09-02
+
+- Added explicit MIT license, support links, and editor-specific discovery
+  metadata to the extension manifest
+- Restored compatibility with VS Code 1.25 and later
+- Refreshed the README with registry-specific install counts, a
+  registry-neutral release badge, and a Spectra Assure security assessment
+- Renamed `LICENSE.txt` to `LICENSE`
+
 ## [3.1.3] — 2026-08-16
 
 - First release on [Open VSX](https://open-vsx.org/extension/AlDuncanson/react-hooks-snippets)
