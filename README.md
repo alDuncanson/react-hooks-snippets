@@ -48,6 +48,16 @@ needed. Add it with your plugin manager and load VS Code-format snippets:
 { "alDuncanson/react-hooks-snippets" },
 ```
 
+Or, on Nix, consume the flake and add the package to your plugin list:
+
+```nix
+# flake input
+inputs.react-hooks-snippets.url = "github:alDuncanson/react-hooks-snippets";
+
+# then wherever you declare Neovim plugins
+inputs.react-hooks-snippets.packages.${pkgs.system}.default
+```
+
 ```lua
 require("luasnip.loaders.from_vscode").lazy_load()
 ```
