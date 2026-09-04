@@ -1,0 +1,70 @@
+name: Badge Data
+
+# Refreshes the shields.io endpoint-badge JSON on the `badges` branch once a
+# day. This keeps README badges live without depending on a third-party badge
+# service, and touches the (undocumented) Marketplace stats API exactly once
+# per day instead of once per README view.
+on:
+  schedule:
+    - cron: '23 9 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+
+      - name: Fetch marketplace stats
+        run: |
+          curl -sf -X POST "https://marketplace.visualstudio.com/_apis/public/gallery/extensionquery" \
+            -H "Content-Type: application/json" \
+            -H "Accept: application/json;api-version=3.0-preview.1" \
+            -d '{"filters":[{"criteria":[{"filterType":7,"value":"AlDuncanson.react-hooks-snippets"}]}],"flags":256}' \
+            > /tmp/stats.json
+
+      - name: Build shields endpoint JSON
+        run: |
+          mkdir -p /tmp/badges
+          python3 - <<'EOF'
+          import json
+
+          with open("/tmp/stats.json") as f:
+              stats = {
+                  s["statisticName"]: s["value"]
+                  for s in json.load(f)["results"][0]["extensions"][0]["statistics"]
+              }
+
+          def short(n):
+              for div, suffix in ((1_000_000_000, "B"), (1_000_000, "M"), (1_000, "K")):
+                  if n >= div:
+                      return f"{n / div:.2f}".rstrip("0").rstrip(".") + suffix
+              return str(int(n))
+
+          def write(name, label, message, color):
+              with open(f"/tmp/badges/{name}.json", "w") as f:
+                  json.dump(
+                      {"schemaVersion": 1, "label": label, "message": message, "color": color},
+                      f,
+                  )
+
+          write("installs", "VS Marketplace", short(stats["install"]), "8A2BE2")
+
+          rating = stats.get("averagerating", 0)
+          count = int(stats.get("ratingcount", 0))
+          write("rating", "rating", f"{rating:g}/5 ({count})", "yellow")
+          EOF
+
+      - name: Publish to badges branch
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git checkout --orphan badges
+          git rm -rf --quiet .
+          cp /tmp/badges/*.json .
+          git add ./*.json
+          git commit -m "chore: update badge data"
+          git push --force origin badges
