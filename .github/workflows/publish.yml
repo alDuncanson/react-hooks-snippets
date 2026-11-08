@@ -28,7 +28,9 @@ jobs:
         run: node scripts/validate.mjs
 
       - name: Package vsix
-        run: npx @vscode/vsce package
+        run: |
+          node scripts/marketplace-readme.mjs
+          npx @vscode/vsce package --readme-path README.marketplace.md
 
       - name: Attest build provenance
         id: attest
