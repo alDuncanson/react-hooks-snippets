@@ -63,5 +63,9 @@
 				"path": "./snippets/snippets.json"
 			}
 		]
+	},
+	"devDependencies": {
+		"@vscode/vsce": "4.1.0",
+		"ovsx": "1.3.0"
 	}
 }

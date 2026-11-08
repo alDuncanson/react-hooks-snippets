@@ -5,23 +5,31 @@ on:
     tags:
       - 'v*'
 
-permissions:
-  contents: write
-
 jobs:
-  publish:
+  marketplace:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     steps:
       - uses: actions/checkout@v5
+
+      - uses: SocketDev/action@ba6de6cc0565af1f42295590380973573297e31f # v1.3.2
+        with:
+          mode: firewall-free
+
+      - name: Install pinned tooling
+        run: sfw npm ci
 
       - name: Validate snippets and README
         run: node scripts/validate.mjs
 
-      - name: Publish to VS Marketplace
-        run: npx @vscode/vsce publish -p ${{ secrets.VSCE_PAT }}
-
       - name: Package vsix
         run: npx @vscode/vsce package
+
+      - name: Publish to VS Marketplace
+        env:
+          VSCE_PAT: ${{ secrets.VSCE_PAT }}
+        run: npx @vscode/vsce publish --packagePath react-hooks-snippets-*.vsix
 
       - name: Create GitHub release
         env:
@@ -33,11 +41,27 @@ jobs:
             --generate-notes \
             react-hooks-snippets-*.vsix
 
-      # Last on purpose: an Open VSX failure must not block the release.
-      # Currently failing — the ID was blocklisted after an impersonation
-      # campaign; unblock is tracked with the Open VSX registry operators.
+  openvsx:
+    needs: marketplace
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v5
+
+      - uses: SocketDev/action@ba6de6cc0565af1f42295590380973573297e31f # v1.3.2
+        with:
+          mode: firewall-free
+
+      - name: Install pinned tooling
+        run: sfw npm ci
+
+      - name: Download release vsix
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh release download "$GITHUB_REF_NAME" --pattern '*.vsix'
+
       - name: Publish to Open VSX
-        run: |
-          # create-namespace is one-time; it fails harmlessly once the namespace exists
-          npx ovsx create-namespace AlDuncanson -p ${{ secrets.OVSX_PAT }} || true
-          npx ovsx publish -p ${{ secrets.OVSX_PAT }}
+        env:
+          OVSX_PAT: ${{ secrets.OVSX_PAT }}
+        run: npx ovsx publish react-hooks-snippets-*.vsix
