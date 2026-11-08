@@ -41,8 +41,6 @@ jobs:
             --generate-notes \
             react-hooks-snippets-*.vsix
 
-  # Its own job so an Open VSX failure is retried with "Re-run failed jobs"
-  # instead of republishing to the Marketplace.
   openvsx:
     needs: marketplace
     runs-on: ubuntu-latest
