@@ -10,6 +10,8 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       contents: write
+      id-token: write
+      attestations: write
     steps:
       - uses: actions/checkout@v7
         with:
@@ -28,6 +30,15 @@ jobs:
       - name: Package vsix
         run: npx @vscode/vsce package
 
+      - name: Attest build provenance
+        id: attest
+        uses: actions/attest-build-provenance@4d101475d8b20a2381f78447822ac1eab6504dd8 # v4.2.2
+        with:
+          subject-path: react-hooks-snippets-*.vsix
+
+      - name: Attach the Sigstore bundle to the release assets
+        run: cp "${{ steps.attest.outputs.bundle-path }}" "$(ls react-hooks-snippets-*.vsix).sigstore.json"
+
       - name: Publish to VS Marketplace
         env:
           VSCE_PAT: ${{ secrets.VSCE_PAT }}
@@ -41,7 +52,8 @@ jobs:
             --title "$GITHUB_REF_NAME" \
             --notes "# React Hooks Snippets $GITHUB_REF_NAME 🚀" \
             --generate-notes \
-            react-hooks-snippets-*.vsix
+            react-hooks-snippets-*.vsix \
+            react-hooks-snippets-*.vsix.sigstore.json
 
   openvsx:
     needs: marketplace
