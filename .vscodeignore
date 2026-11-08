@@ -9,5 +9,3 @@ assets/**
 !assets/icon.png
 flake.nix
 flake.lock
-node_modules/**
-package-lock.json

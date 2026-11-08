@@ -26,4 +26,4 @@ jobs:
         run: node scripts/validate.mjs
 
       - name: Check extension can be packaged
-        run: npx vsce ls
+        run: npx @vscode/vsce ls

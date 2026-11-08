@@ -24,12 +24,12 @@ jobs:
         run: node scripts/validate.mjs
 
       - name: Package vsix
-        run: npx vsce package
+        run: npx @vscode/vsce package
 
       - name: Publish to VS Marketplace
         env:
           VSCE_PAT: ${{ secrets.VSCE_PAT }}
-        run: npx vsce publish --packagePath react-hooks-snippets-*.vsix
+        run: npx @vscode/vsce publish --packagePath react-hooks-snippets-*.vsix
 
       - name: Create GitHub release
         env:
