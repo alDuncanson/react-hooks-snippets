@@ -9,3 +9,4 @@ assets/**
 !assets/icon.png
 flake.nix
 flake.lock
+SECURITY.md
