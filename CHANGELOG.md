@@ -2,6 +2,17 @@
 
 All notable changes to the React Hooks Snippets extension.
 
+## [3.1.5] — 2026-11-08
+
+- Consumable as a Nix flake: `packages.<system>.default` builds the snippet
+  pack as a Neovim plugin, with a matching `vimPlugins` overlay
+- Socket security badge replaces the Spectra Assure badge; install and
+  rating badges are now served from the repo instead of a third-party
+  stats service
+- Release tooling (`vsce`, `ovsx`) is pinned and installed through Socket
+  Firewall, and both registries receive the identical vsix that is attached
+  to the GitHub release
+
 ## [3.1.4] — 2026-09-02
 
 - Added explicit MIT license, support links, and editor-specific discovery
