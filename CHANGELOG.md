@@ -2,6 +2,14 @@
 
 All notable changes to the React Hooks Snippets extension.
 
+## [3.1.6] — 2026-11-08
+
+- Badges are rendered and hosted from this repository instead of shields.io,
+  and a Socket security badge joins them
+- Every release now ships with build provenance: the `.vsix` is attested by
+  GitHub Actions and the Sigstore bundle is attached to the GitHub release
+- Added a security policy with private vulnerability reporting
+
 ## [3.1.5] — 2026-11-08
 
 - Consumable as a Nix flake: `packages.<system>.default` builds the snippet
